@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsilon</title>
+</head>
+<body>
+    <script>
+        const num1 = 0.1;
+        const num2 = 0.2;
+
+        console.log(num1 + num2 === 0.3) // hasilnya akan false
+
+        function hampirSama(a, b){
+            return Math.abs(a - b) < Number.EPSILON;
+        }
+
+        console.log(hampirSama(num1 + num2, 0.3)); // hsilnya true
+    </script>
+</body>
+</html>
